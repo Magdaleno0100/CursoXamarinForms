@@ -11,6 +11,13 @@
                 x:Name="lblHello">
         </Label>
         <Slider x:Name="sldValue"></Slider>
+
+        <Label HorizontalOptions="Center" 
+               VerticalOptions="Center" 
+               x:Name="lblValor2">
+        </Label>
+        <Slider ValueChanged="Slider_ValueChanged"></Slider>
+        
     </StackLayout>
     
 </ContentPage>

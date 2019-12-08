@@ -18,6 +18,9 @@ namespace Curso1
             sldValue.Value = 0.5;
 		}
 
-
+        private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
+        {
+            lblValor2.Text = String.Format("Valor : {0:F2}", e.NewValue);
+        }
     }
 }
