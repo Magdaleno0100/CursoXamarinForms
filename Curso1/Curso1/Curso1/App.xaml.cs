@@ -10,7 +10,7 @@ namespace Curso1
         public App()
         {
             InitializeComponent();
-            MainPage = new StackPage();
+            MainPage = new Ejercicio3Layout();
         }
 
         protected override void OnStart()

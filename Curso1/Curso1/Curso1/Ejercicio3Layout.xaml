@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Curso1.Ejercicio3Layout">
+
+    
+    <StackLayout>
+        <Label Text="Magdaleno"></Label>
+        <Image Source="http://placehold.it/1100x400"></Image>
+        <StackLayout  Orientation="Horizontal">
+            <Label Text="Like"></Label>
+            <Label Text="Comment"></Label>
+            <Label Text="Share"></Label>
+        </StackLayout>
+        <BoxView HorizontalOptions="FillAndExpand" HeightRequest="1" Color="Black" />
+        <Label Text="700 Likes" FontAttributes="Bold"></Label>
+        <Label Text="testxttestxttestxttestxttestxt testxttestxttestxttestxttestxttestxttestxt testxttestxttestxttestxt"></Label>
+        
+        
+    </StackLayout>
+
+
+
+</ContentPage>
