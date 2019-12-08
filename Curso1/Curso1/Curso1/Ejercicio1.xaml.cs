@@ -9,9 +9,9 @@ using Xamarin.Forms.Xaml;
 
 namespace Curso1
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class Ejercicio1 : ContentPage
-	{
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class Ejercicio1 : ContentPage
+    {
         private int _inicio = 0;
         private string[] _citas = new string[]
         {
@@ -19,11 +19,11 @@ namespace Curso1
             "Text1111",
             "Text22222222"
         };
-		public Ejercicio1 ()
-		{
-			InitializeComponent ();
+        public Ejercicio1()
+        {
+            InitializeComponent();
             citas.Text = _citas[_inicio];
-		}
+        }
 
         private void Button_Clicked(object sender, EventArgs e)
         {
@@ -32,7 +32,7 @@ namespace Curso1
                 _inicio = 0;
 
             citas.Text = _citas[_inicio];
-                
+
 
         }
     }

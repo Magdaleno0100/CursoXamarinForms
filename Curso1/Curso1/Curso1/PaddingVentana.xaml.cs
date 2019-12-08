@@ -9,12 +9,12 @@ using Xamarin.Forms.Xaml;
 
 namespace Curso1
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class PaddingVentana : ContentPage
-	{
-		public PaddingVentana ()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class PaddingVentana : ContentPage
+    {
+        public PaddingVentana()
+        {
+            InitializeComponent();
             sldValue2.Value = 0.5;
 
             //Se comenta para agregar esto mismo con XAML
@@ -39,8 +39,8 @@ namespace Curso1
             */
 
 
-      
+
 
         }
-	}
+    }
 }

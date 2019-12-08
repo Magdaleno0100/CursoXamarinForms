@@ -9,12 +9,12 @@
             <On Platform="UWP" Value="0, 0, 0, 0" />
         </OnPlatform>
     </ContentPage.Padding>
-    
-    
+
+
     <StackLayout>
 
         <BoxView Color="Red" Opacity="{Binding Source={x:Reference sldValue2}, Path=Value}"></BoxView>
-        
+
         <Label BindingContext="{x:Reference sldValue2}"
             Text="{Binding Value, StringFormat='Value is {0:F2}'}" 
             Opacity="{Binding Value}"

@@ -36,5 +36,5 @@
         <Slider x:Name="sldValue2"></Slider>
 
     </StackLayout>
-    
+
 </ContentPage>

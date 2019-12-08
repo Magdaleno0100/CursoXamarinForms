@@ -9,14 +9,14 @@ using Xamarin.Forms.Xaml;
 
 namespace Curso1
 {
-	[XamlCompilation(XamlCompilationOptions.Compile)]
-	public partial class GreetPage : ContentPage
-	{
-		public GreetPage ()
-		{
-			InitializeComponent ();
+    [XamlCompilation(XamlCompilationOptions.Compile)]
+    public partial class GreetPage : ContentPage
+    {
+        public GreetPage()
+        {
+            InitializeComponent();
             sldValue.Value = 0.5;
-		}
+        }
 
         private void Slider_ValueChanged(object sender, ValueChangedEventArgs e)
         {

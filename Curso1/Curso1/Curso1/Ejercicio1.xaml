@@ -9,22 +9,22 @@
             <On Platform="UWP" Value="0, 0, 0, 0" />
         </OnPlatform>
     </ContentPage.Padding>
-    
+
 
     <StackLayout Padding="0,20,0,0">
         <Button Text="Next" Clicked="Button_Clicked"></Button>
-            <Label  x:Name="lblFontSize" 
+        <Label  x:Name="lblFontSize" 
                     Text="{Binding 
                             StringFormat='Font Size is {0:F2}',
                             Source={x:Reference sliderFontSize},
                             Path=Value
                           }"></Label>
-            <Slider x:Name="sliderFontSize" Maximum="50" Minimum="16"></Slider>
+        <Slider x:Name="sliderFontSize" Maximum="50" Minimum="16"></Slider>
         <Label x:Name="citas" 
                FontSize="{Binding
                           Source={x:Reference sliderFontSize},Path=Value}">
         </Label>
     </StackLayout>
-        
+
 
 </ContentPage>
