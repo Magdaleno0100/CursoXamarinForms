@@ -16,13 +16,27 @@ namespace Curso1
 		{
 			InitializeComponent ();
             sldValue2.Value = 0.5;
-            
+
+            //Se comenta para agregar esto mismo con XAML
+            /*
             if (Device.RuntimePlatform == Device.iOS)
                 Padding = new Thickness(0, 20, 0, 0);
             else if (Device.RuntimePlatform == Device.Android)
                 Padding = new Thickness(0, 20, 0, 0);
             else if (Device.RuntimePlatform == Device.WPF)
                 Padding = new Thickness(0, 20, 0, 0);
+                */
+
+            /*
+             * Se comenta otra forma de agregar padding
+             var x = new OnPlatform<Thickness>
+            {
+                Android = new Thickness(0),
+                iOS = new Thickness(0,20,0,0)
+            };
+
+            Padding = x;
+            */
 
 
       
