@@ -12,7 +12,8 @@ namespace Curso1
             InitializeComponent();
             //MainPage = new MainPage();
             //MainPage = new GreetPage();
-             MainPage = new PaddingVentana();
+            //MainPage = new PaddingVentana();
+            MainPage = new Ejercicio1();
         }
 
         protected override void OnStart()
