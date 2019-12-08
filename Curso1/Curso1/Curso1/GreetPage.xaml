@@ -4,10 +4,14 @@
              x:Class="Curso1.GreetPage">
 
     <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+
         <Label  Text="{Binding 
             Source={x:Reference sldValue}, 
             Path=Value, 
             StringFormat='Value is {0:F2}'}" 
+            Opacity="{Binding
+                Source={x:Reference sldValue}, 
+                Path=Value}"
                 x:Name="lblHello">
         </Label>
         <Slider x:Name="sldValue"></Slider>
@@ -17,7 +21,20 @@
                x:Name="lblValor2">
         </Label>
         <Slider ValueChanged="Slider_ValueChanged"></Slider>
-        
+
+
+        <!-- Se agrega BindingContext cuando se utiliza el mismo elemento para diferentes atributos 
+            También se puede agregar en la etiqueta "StackLayout"
+        -->
+        <BoxView Color="Red" Opacity="{Binding Source={x:Reference sldValue}, Path=Value}"></BoxView>
+        <Label BindingContext="{x:Reference sldValue2}"
+            Text="{Binding Value, StringFormat='Value is {0:F2}'}" 
+            Opacity="{Binding Value}"
+                x:Name="lblHello2">
+        </Label>
+
+        <Slider x:Name="sldValue2"></Slider>
+
     </StackLayout>
     
 </ContentPage>

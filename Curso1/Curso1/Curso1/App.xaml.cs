@@ -10,9 +10,9 @@ namespace Curso1
         public App()
         {
             InitializeComponent();
-
             //MainPage = new MainPage();
-            MainPage = new GreetPage();
+            //MainPage = new GreetPage();
+             MainPage = new PaddingVentana();
         }
 
         protected override void OnStart()
