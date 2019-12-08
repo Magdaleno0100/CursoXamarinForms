@@ -4,10 +4,13 @@
              x:Class="Curso1.PaddingVentana">
     <ContentPage.Padding>
         <OnPlatform x:TypeArguments="Thickness">
-            iOS = "0,20,0,0"
-            Android = "0,20,0,0"
+            <On Platform="iOS" Value="0, 20, 0, 0" />
+            <On Platform="Android" Value="0, 0, 0, 0" />
+            <On Platform="UWP" Value="0, 0, 0, 0" />
         </OnPlatform>
     </ContentPage.Padding>
+    
+    
     <StackLayout>
 
         <BoxView Color="Red" Opacity="{Binding Source={x:Reference sldValue2}, Path=Value}"></BoxView>
